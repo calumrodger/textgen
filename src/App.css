@@ -5,8 +5,37 @@
   align-items: stretch;
 }
 
+.process-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .item {
-  height: 33%;
-  width: 33%;
-  color: pink;
+  text-align: center;
+  height: 25%;
+  width: 25%;
+  color: yellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+textarea {
+  height: 300px;
+  width: 200px;
+  border-width: 1px;
+  background-color: white;
+  background-color: palegoldenrod;
+}
+
+button {
+  background-color: orange;
+  margin: 5px;
+  border-width: 1px;
+  border-color: palegoldenrod;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.selected-output-word {
+  color: red;
 }

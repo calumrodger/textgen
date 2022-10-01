@@ -2,8 +2,6 @@ import React from 'react'
 
 const SaveOutputToTxt = (props) => {
 
-
-
     const saveToTxt = () => {
 
         const blob = new Blob([props.outputText], { type: "text/plain;charset=utf-8" })
