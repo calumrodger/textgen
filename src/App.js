@@ -14,6 +14,7 @@ const App = () => {
 
   const setInput = (text) => {
     setInputText(text)
+    console.log('hellooooo')
   }
 
   const setOutput = (text) => {
