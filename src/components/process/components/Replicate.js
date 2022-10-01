@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Replicate = (props) => {
+
+    const replicate = () => {
+        props.setOutput(props.inputText)
+    }
+
     return (
         <>
-        <button>replicate</button>
+        <button onClick={replicate}>replicate input</button>
         </>
     )
 }
