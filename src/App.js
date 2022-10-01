@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
 
+import Input from './components/input/Input';
+import ProcessContainer from './components/process/container/ProcessContainer';
+import Output from './components/output/Output';
+
 function App() {
+
+  const [inputText, setInputText] = useState('input')
+  const [outputText, setOutputText] = useState('output')
+
+  const setInput = (text) => {
+    setInputText(text)
+  }
+
+  const setOutput = (text) => {
+    setOutputText(text)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+    <Input inputText={inputText} outputText={outputText} setInput={setInput} setOutput={setOutput}/>
+    <ProcessContainer inputText={inputText} outputText={outputText} setInput={setInput} setOutput={setOutput}/>
+    <Output inputText={inputText} outputText={outputText} setInput={setInput} setOutput={setOutput}/>
     </div>
   );
 }
